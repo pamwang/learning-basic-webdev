@@ -45,16 +45,18 @@ body {
     justify-content: center;
 }
 
-.content-wrapper>.chicken {
-    width: 33%;
-    height: auto;
-    margin: 0.5em;
-    padding: 0.5em;
-    background-color: #FCF1F0;
+.content-wrapper>.first-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 66%;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-.content-wrapper>.beef {
-    width: 33%;
+.content-wrapper>.first-row>div {
+    width: 50%;
     height: auto;
     margin: 0.5em;
     padding: 0.5em;
@@ -84,25 +86,37 @@ p {
     -webkit-text-stroke: 1px rgb(22, 1, 116);
 }
 
+footer {
+    background-color: #FCF1F0;
+    width: 100%;
+    height: 5vh;
+    position: fixed;
+    bottom: 0;
+}
+
 
 /*media considerations*/
 
 
 /*tablet*/
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-device-width: 991px) {
     .content-wrapper {
-        display: block;
+        flex-direction: column;
+    }
+    .content-wrapper>.first-row {
+        flex-direction: row;
+        width: 100%;
     }
     .content-wrapper>.chicken {
-        width: auto;
+        width: 50%;
         height: auto;
         margin: 0.5em;
         padding: 0.5em;
         background-color: #FCF1F0;
     }
     .content-wrapper>.beef {
-        width: auto;
+        width: 50%;
         height: auto;
         margin: 0.5em;
         padding: 0.5em;
@@ -119,3 +133,27 @@ p {
 
 
 /*phone*/
+
+@media only screen and (max-device-width: 767px) {
+    .content-wrapper {
+        display: block;
+    }
+    .content-wrapper>.first-row {
+        flex-direction: column;
+        width: 100%;
+    }
+    .content-wrapper>.first-row>div {
+        width: auto;
+        height: auto;
+        margin: 0.5em;
+        padding: 0.5em;
+        background-color: #FCF1F0;
+    }
+    .content-wrapper>.sushi {
+        width: auto;
+        height: auto;
+        margin: 0.5em;
+        padding: 0.5em;
+        background-color: #FCF1F0;
+    }
+}
