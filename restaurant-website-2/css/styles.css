@@ -1,0 +1,100 @@
+body {
+    font-size: 16px;
+    color: #212121;
+    background-color: #feffff;
+    font-family: 'Exo 2', sans-serif;
+    text-decoration: none;
+    align-items: center;
+}
+
+
+/** HEADER **/
+
+#header-nav {
+    background-color: #fafafa;
+    border-radius: 0;
+    border: 0;
+}
+
+.container {
+    padding: 1em;
+    width: 75%;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #212121;
+}
+
+.navbar-brand {
+    padding-top: auto;
+    margin: 1em;
+}
+
+
+/* Restaurant name */
+
+h1 {
+    font-size: 2em;
+    text-transform: lowercase;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+    padding-left: 0em;
+    padding-bottom: 0.25em;
+}
+
+
+/* Button toggle */
+
+.navbar-brand {
+    width: 50%;
+}
+
+.dropdown {
+    display: float;
+    float: right;
+    padding-top: 0.75em;
+}
+
+.dropdown-menu {
+    margin-left: 100%;
+}
+
+.dropdown-menu: hover {
+    background-color: #fafafa;
+}
+
+.btn-primary {
+    color: #212121;
+    background-color: #fafafa;
+    border-color: #212121;
+}
+
+
+/* tiles */
+
+#home-tiles {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    height: 100vh;
+}
+
+#tile {
+    width: 33.33%
+}
+
+p {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#menu-heading {
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+}
